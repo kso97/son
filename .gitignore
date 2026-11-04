@@ -1,0 +1,60 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 민감 정보 (강의 자료에는 포함되면 안 되는 것들)
+.AP-key.md
+.env
+*.pem
+*.key
+secrets/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 백업 파일 (setup.sh가 만드는 백업)
+*.bak
+*.bak.*
+
+# 임시 파일
+*.tmp
+*.log
+
+# PPTX 백업 폴더 (강사 본인 컴퓨터에서만 보관, repo는 .md만 관리)
+01.강의교재/_pptx-backup/
+**/_pptx-backup/
+
+# PPTX 파일 (Office가 만드는 임시 락 파일 포함)
+~$*.pptx
+*.pptx
+
+# 수료증 (수강생 개인정보 포함 — 강사 로컬에서만 보관, repo 비공개)
+10.수료증/
+
+# 강의 교재 _draft 폴더 (주차별 순차 공개 정책 — 매주 release 시 _draft → ./로 이동)
+# W2~W5 교안 등 사전 작업 자료는 _draft에서 작성/수정 후 배포일에 mv로 공개
+01.강의교재/_draft/
+**/_draft/
+**/00.Backup/
+
+# 컨퍼런스 발표 자료 (개인 발표용 — 별도 관리, repo 비공개)
+01.강의교재/_draft_conference/
+**/_draft_conference/
+
+# 작업 리포트 (개인 작업 메모·핸드오프 — repo 비공개)
+# 루트 전용: 프레임워크 템플릿의 05.리포트 산출물 폴더는 추적 대상이므로 제외하지 않음
+/05.리포트/
